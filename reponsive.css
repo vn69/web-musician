@@ -52,8 +52,8 @@
   }
 
   .menu-bar {
-    display: block;
-    font-size: 30px;
+    display: inline-block;
+    /* font-size: 30px; */
   }
 
   .menu-bar__body {
@@ -65,7 +65,7 @@
     left: 0;
     width: 100%;
 
-    padding-top: 75px;
+    padding-top: 82px;
     padding-bottom: 20px;
 
     display: flex;
