@@ -1,9 +1,11 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const header = $("header");
+const header = $(".header-top");
+const menuTouch = $(".menu-bar__body");
+const menuBtn = $("#menu-btn");
 
-window.onscroll = function () {
+window.onscroll = () => {
   showHeader();
 };
 
@@ -25,3 +27,7 @@ function showHeader() {
     header.classList.remove("header-scroll", "header-scroll-sticky");
   }
 }
+
+menuBtn.onclick = () => {
+  menuTouch.classList.toggle("menu-bar__body-show");
+};

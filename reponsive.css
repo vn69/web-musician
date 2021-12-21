@@ -44,4 +44,59 @@
   .hero-image > .hero-text {
     font-size: 60px;
   }
+
+  /* navbar mobile */
+  .header-bar__social,
+  .header-bar__links {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+    font-size: 30px;
+  }
+
+  .menu-bar__body {
+    display: block;
+    z-index: 9;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding-top: 75px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.4s ease;
+    will-change: opacity, transform;
+
+    background-color: #001d38bd;
+  }
+  .menu-bar__body .header-bar__links,
+  .menu-bar__body .header-bar__social {
+    display: block;
+    text-align: center;
+  }
+  .menu-bar__body .header-bar__links > li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .menu-bar__body .header-bar__links > li a {
+    font-size: 18px;
+  }
+  .header-bar__social > li:not(:first-child) > a > i {
+    margin-left: 40px;
+  }
+  .menu-bar__body-show {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

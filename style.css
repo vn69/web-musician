@@ -41,6 +41,8 @@
 .header-bar__social > li > a > i {
   font-size: 30px;
   color: var(--white);
+}
+.header-bar__social > li:not(:first-child) > a > i {
   margin-left: 10px;
 }
 .header-top a,
@@ -52,6 +54,13 @@
 .header-top i:hover {
   color: var(--red);
 }
+.menu-bar {
+  display: none;
+}
+.menu-bar__body {
+  display: none;
+}
+
 /* hero */
 
 .image-bc-hero {
