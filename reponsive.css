@@ -1,0 +1,47 @@
+/* mobile */
+@media only screen and (max-width: 767px) {
+  /* hover image */
+  .team__image .hover-icon > i {
+    margin-bottom: 0px;
+    opacity: 1;
+  }
+  .team__image .hover-overlay {
+    opacity: 1;
+  }
+  .team__image .image-hover__content .show-time {
+    margin-left: 0px;
+    opacity: 1;
+  }
+  .team__image .image-hover__content .title {
+    opacity: 1;
+    top: 0;
+  }
+  .musician-album-hero {
+    top: -10px;
+  }
+  .musician-album .btn-wrapper {
+    padding-top: 10px;
+    justify-content: flex-start;
+  }
+  .musician-album-hero {
+    margin-top: -230px;
+  }
+  .musician-info__black {
+    margin-bottom: 30px;
+  }
+
+  .hero-image {
+    height: 700px;
+  }
+  .about__image {
+    object-fit: contain;
+    height: 100%;
+  }
+  .footer-bot__links {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-image > .hero-text {
+    font-size: 60px;
+  }
+}

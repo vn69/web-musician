@@ -1,0 +1,99 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ee1a2f;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #001d38;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  color: var(--dark);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+  display: inline-block;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.relative {
+  position: relative;
+}
+
+/* button */
+.btn {
+  border: 1px solid var(--red);
+  background-color: transparent;
+  color: var(--red);
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+
+  display: inline-block;
+  padding: 14px 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  will-change: color, backgroundColor;
+}
+.btn-md {
+  padding: 10px 22px;
+}
+.btn:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+section {
+  margin-bottom: 120px;
+}
+
+.bc-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h3.big-title {
+  font-size: 36px;
+  color: var(--primary);
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
